@@ -110,7 +110,10 @@ License: You must have a valid license purchased only from themeforest(the above
 								
 								<div class="m-stack__item m-stack__item--middle m-brand__logo">
 									<a href="index.html" class="m-brand__logo-wrapper">
+										<!--
 										<img alt="" src="assets/demo/media/img/logo/logo2.png" height="60" width="150" />
+										-->
+										<img alt="" src="assets/logoAS360.png" height="38" width="168" />
 									</a>
 								</div>
 								
@@ -302,7 +305,26 @@ License: You must have a valid license purchased only from themeforest(the above
 								-->
 							</div>
 
-							<!-- END: Horizontal Menu -->
+							<div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-dark ">
+									<ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+										<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" 
+											m-menu-submenu-toggle="click" 
+											m-menu-link-redirect="1" 
+											aria-haspopup="true"
+											style="padding-left:0px;">
+											<a href="javascript:;" class="m-menu__link m-menu__toggle" title="Non functional dummy link">
+										
+												<img src="assets/demo/media/img/logo/logo2.png" 
+												class="m--img-rounded m--marginless m--img-centered" 
+												alt=""
+												style="max-width:120px!Important;margin-top:5px!Important;"/>
+										
+										</li>
+										
+									</ul>
+								</div>
+
+							
 
 							<!-- BEGIN: Topbar -->
 							<div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general m-stack--fluid">
@@ -342,6 +364,22 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 										</li>
 										-->
+
+										
+
+										<li class="m-nav__item" m-dropdown-toggle="click" m-dropdown-persistent="1">
+											<a href="#" class="m-nav__link m-dropdown__toggle">
+												
+												<span class="m-topbar__userpic">
+													<img src="assets/famsa-logo.png" 
+													class="m--img-rounded m--marginless m--img-centered" 
+													alt=""
+													style="max-width:80px!Important;"/>
+												</span>
+
+											</a>
+										</li>
+
 										<li class="m-nav__item m-topbar__notifications m-topbar__notifications--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-center 	m-dropdown--mobile-full-width" m-dropdown-toggle="click"
 										m-dropdown-persistent="1">
 										   <a href="#" class="m-nav__link m-dropdown__toggle" id="m_topbar_notification_icon">
@@ -994,6 +1032,20 @@ License: You must have a valid license purchased only from themeforest(the above
 																	...
 																</select>
 															</div>
+
+															<div class="form-group m-form__group row">
+
+																<label class="col-lg-12">Logo de la empresa:</label>
+																<div class="col-lg-12">
+																	<div class="m-dropzone dropzone" action="inc/api/dropzone/upload.php" id="m-dropzone-one">
+																		<div class="m-dropzone__msg dz-message needsclick">
+																			<h3 class="m-dropzone__msg-title">Arraste el logo aqui para cargar.</h3>
+																			<span class="m-dropzone__msg-desc">El logo será asociado a la empresa ingresada. Revisar las dimensiones requeridas.</span>
+																		</div>
+																	</div>
+																</div>
+																</div>
+
 															
 														</div>
 													<div class="m-portlet__foot m-portlet__foot--fit">
