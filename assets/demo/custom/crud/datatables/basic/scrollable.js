@@ -8,6 +8,11 @@ var DatatablesBasicScrollable = function() {
 			scrollY: '50vh',
 			scrollX: true,
 			scrollCollapse: true,
+			language: {
+				lengthMenu: "Mostrar _MENU_ registros",
+				info: "Mostrando página _PAGE_ de _PAGES_"
+			},
+			searching: false,
 			columnDefs: [
 				{
 					targets: -1,
@@ -31,13 +36,13 @@ var DatatablesBasicScrollable = function() {
 					},
 				},
 				{
-					targets: 8,
+					targets: 5,
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Pending', 'class': 'm-badge--brand'},
-							2: {'title': 'Delivered', 'class': ' m-badge--metal'},
-							3: {'title': 'Canceled', 'class': ' m-badge--primary'},
-							4: {'title': 'Success', 'class': ' m-badge--success'},
+							1: {'title': 'Activa', 'class': 'm-badge--brand'},
+							2: {'title': 'Pendiente', 'class': ' m-badge--metal'},
+							3: {'title': 'Pendiente', 'class': ' m-badge--warning'},
+							4: {'title': 'Cancelada', 'class': ' m-badge--success'},
 							5: {'title': 'Info', 'class': ' m-badge--info'},
 							6: {'title': 'Danger', 'class': ' m-badge--danger'},
 							7: {'title': 'Warning', 'class': ' m-badge--warning'},
@@ -46,21 +51,6 @@ var DatatablesBasicScrollable = function() {
 							return data;
 						}
 						return '<span class="m-badge ' + status[data].class + ' m-badge--wide">' + status[data].title + '</span>';
-					},
-				},
-				{
-					targets: 9,
-					render: function(data, type, full, meta) {
-						var status = {
-							1: {'title': 'Online', 'state': 'danger'},
-							2: {'title': 'Retail', 'state': 'primary'},
-							3: {'title': 'Direct', 'state': 'accent'},
-						};
-						if (typeof status[data] === 'undefined') {
-							return data;
-						}
-						return '<span class="m-badge m-badge--' + status[data].state + ' m-badge--dot"></span>&nbsp;' +
-							'<span class="m--font-bold m--font-' + status[data].state + '">' + status[data].title + '</span>';
 					},
 				},
 			],
