@@ -690,36 +690,53 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 							-->
 
-							<!-- ALTA DE EMPRESA -->
-							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
-								<a href="altaEmpresa.html" class="m-menu__link m-menu__toggle">
-									<i class="m-menu__link-icon flaticon-user-add"></i>
-									<span class="m-menu__link-text">Alta de Empresa</span>
+							<!-- CAMPAÑAS -->
+							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+									
+								<a href="javascript:;" class="m-menu__link m-menu__toggle">
+									<i class="m-menu__link-icon la la-cogs"></i>
+									<span class="m-menu__link-text">Configuración</span>
+									<i class="m-menu__ver-arrow la la-angle-right"></i>
 								</a>
-							</li>
+								
+								<div class="m-menu__submenu"><span class="m-menu__arrow"></span>
+									<ul class="m-menu__subnav">
 
-							<!-- ALTA DE Menu -->
-							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
-								<a href="altaMenu.html" class="m-menu__link m-menu__toggle">
-									<i class="m-menu__link-icon flaticon-map"></i>
-									<span class="m-menu__link-text">Alta de Menús</span>
-								</a>
-							</li>
+										<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
+											<a href="empresas.html" class="m-menu__link m-menu__toggle">
+												<i class="m-menu__link-icon flaticon-user-add"></i>
+												<span class="m-menu__link-text">Empresas</span>
+											</a>
+										</li>
 
-							<!-- ALTA DE comunicados -->
-							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
-								<a href="altaComunicado.html" class="m-menu__link m-menu__toggle">
-									<i class="m-menu__link-icon flaticon-add"></i>
-									<span class="m-menu__link-text">Alta de Cominucados</span>
-								</a>
-							</li>
+										<!-- ALTA DE Menu -->
+										<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
+											<a href="altaMenu.html" class="m-menu__link m-menu__toggle">
+												<i class="m-menu__link-icon flaticon-map"></i>
+												<span class="m-menu__link-text">Menús</span>
+											</a>
+										</li>
 
-							<!-- ALTA DE EMPRESA -->
-							<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
-								<a href="altaCarrusel.html" class="m-menu__link m-menu__toggle">
-									<i class="m-menu__link-icon fa fa-images"></i>
-									<span class="m-menu__link-text">Alta de Carrusel</span>
-								</a>
+										<!-- ALTA DE comunicados -->
+										<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
+											<a href="altaComunicado.html" class="m-menu__link m-menu__toggle">
+												<i class="m-menu__link-icon flaticon-add"></i>
+												<span class="m-menu__link-text">Cominucados</span>
+											</a>
+										</li>
+
+										<!-- ALTA DE EMPRESA -->
+										<li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">		
+											<a href="altaCarrusel.html" class="m-menu__link m-menu__toggle">
+												<i class="m-menu__link-icon fa fa-images"></i>
+												<span class="m-menu__link-text">Carrusel</span>
+											</a>
+										</li>
+
+
+										
+									</ul>
+								</div>
 							</li>
 
 						</ul>
@@ -764,64 +781,33 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="row">
 							<div class="col-xl-12">
 
-								<!--begin:: Widgets/Tasks -->
-								<div class="m-portlet m-portlet--full-height ">
-									<div class="m-portlet__head">
-										<div class="m-portlet__head-caption">
-											<div class="m-portlet__head-title">
-												<h3 class="m-portlet__head-text">
-													Inicio
-												</h3>
+								<!-- AQUI VA EL CARRUSEL -->
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="box-shadow: 5px 5px 15px #888888; max-width:78%; display:inline-block;margin-left:11%;">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" style="background-color:gray;" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselExampleIndicators" style="background-color:gray;" data-slide-to="1"></li>
+											<li data-target="#carouselExampleIndicators" style="background-color:gray;" data-slide-to="2"></li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+											<img class="d-block w-100" src="assets/app/media/img/users/imagen1.png" alt="First slide" style="margin:auto;">
+											</div>
+											<div class="carousel-item">
+											<img class="d-block w-100" src="assets/app/media/img/users/imagen2.png" alt="Second slide" style="margin:auto;">
+											</div>
+											<div class="carousel-item">
+											<img class="d-block w-100" src="assets/app/media/img/users/imagen3.png" alt="Third slide" style="margin:auto;">
 											</div>
 										</div>
-										<div class="m-portlet__head-tools">
-											<ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
-												<li class="nav-item m-tabs__item">
-													<a class="nav-link m-tabs__link active" href="comunicados.html" role="tab">
-														Novedades del día
-													</a>
-												</li>
-											</ul>
-										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:gray;"></span>
+											<span class="sr-only">Anterior</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true" style="background-color:gray;"></span>
+											<span class="sr-only">Siguiente</span>
+										</a>
 									</div>
-									<div class="m-portlet__body">
-										<div class="tab-content">
-											<div class="tab-pane active" id="m_widget2_tab1_content">
-												<!-- AQUI VA EL CARRUSEL -->
-												<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="box-shadow: 5px 5px 15px #888888; max-width:70%; display:inline-block;margin-left:15%;">
-														<ol class="carousel-indicators">
-															<li data-target="#carouselExampleIndicators" style="background-color:gray;" data-slide-to="0" class="active"></li>
-															<li data-target="#carouselExampleIndicators" style="background-color:gray;" data-slide-to="1"></li>
-															<li data-target="#carouselExampleIndicators" style="background-color:gray;" data-slide-to="2"></li>
-														</ol>
-														<div class="carousel-inner">
-														  <div class="carousel-item active">
-															<img class="d-block w-100" src="assets/app/media/img/users/imagen1.png" alt="First slide" style="margin:auto;">
-														  </div>
-														  <div class="carousel-item">
-															<img class="d-block w-100" src="assets/app/media/img/users/imagen2.png" alt="Second slide" style="margin:auto;">
-														  </div>
-														  <div class="carousel-item">
-															<img class="d-block w-100" src="assets/app/media/img/users/imagen3.png" alt="Third slide" style="margin:auto;">
-														  </div>
-														</div>
-														<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-															<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:gray;"></span>
-															<span class="sr-only">Anterior</span>
-														</a>
-														<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-															<span class="carousel-control-next-icon" aria-hidden="true" style="background-color:gray;"></span>
-															<span class="sr-only">Siguiente</span>
-														</a>
-													  </div>
-											</div>
-											<div class="tab-pane" id="m_widget2_tab2_content">
-											</div>
-											<div class="tab-pane" id="m_widget2_tab3_content">
-											</div>
-										</div>
-									</div>
-								</div>
 
 								<!--end:: Widgets/Tasks -->
 							</div>
@@ -870,12 +856,15 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- end::Scroll Top -->
 
 		<!-- begin::Quick Nav -->
+		<!--
 		<ul class="m-nav-sticky" style="margin-top: 30px;">
 			
 			<li class="m-nav-sticky__item" data-toggle="m-tooltip" title="Guia Rapida" data-placement="left">
 				<a href="https://keenthemes.com/forums/forum/support/metronic5/" target="_blank"><i class="la la-info-circle"></i></a>
 			</li>
+			
 		</ul>
+		-->
 
 		<!-- begin::Quick Nav -->
 

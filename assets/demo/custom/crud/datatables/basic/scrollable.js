@@ -57,6 +57,60 @@ var DatatablesBasicScrollable = function() {
 		});
 	};
 
+	var initTable11 = function() {
+		var table = $('#m_table_empresas');
+
+		// begin first table
+		table.DataTable({
+			scrollY: '50vh',
+			scrollX: true,
+			scrollCollapse: true,
+			language: {
+				lengthMenu: "Mostrar _MENU_ registros",
+				info: "Mostrando página _PAGE_ de _PAGES_"
+			},
+			searching: false,
+			columnDefs: [
+				{
+					targets: -1,
+					title: 'Acciones',
+					orderable: false,
+					render: function(data, type, full, meta) {
+						return `
+                        
+                        <a href="altaEmpresa.html" class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill" title="Editar">
+                          <i class="la la-edit"></i>
+						</a>
+						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill" title="Eliminar">
+							<i class="la la-remove"></i>
+						</a>
+						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill" title="Inactivar">
+                          <i class="fa flaticon-lock"></i>
+                        </a>`;
+					},
+				},
+				{
+					targets: 5,
+					render: function(data, type, full, meta) {
+						var status = {
+							1: {'title': 'Activa', 'class': 'm-badge--brand'},
+							2: {'title': 'Pendiente', 'class': ' m-badge--metal'},
+							3: {'title': 'Pendiente', 'class': ' m-badge--warning'},
+							4: {'title': 'Cancelada', 'class': ' m-badge--success'},
+							5: {'title': 'Info', 'class': ' m-badge--info'},
+							6: {'title': 'Danger', 'class': ' m-badge--danger'},
+							7: {'title': 'Warning', 'class': ' m-badge--warning'},
+						};
+						if (typeof status[data] === 'undefined') {
+							return data;
+						}
+						return '<span class="m-badge ' + status[data].class + ' m-badge--wide">' + status[data].title + '</span>';
+					},
+				},
+			],
+		});
+	};
+
 	var initTable2 = function() {
 		var table = $('#m_table_2');
 
@@ -117,6 +171,7 @@ var DatatablesBasicScrollable = function() {
 		//main function to initiate the module
 		init: function() {
 			initTable1();
+			initTable11();
 			initTable2();
 		},
 
